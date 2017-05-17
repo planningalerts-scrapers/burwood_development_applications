@@ -7,6 +7,7 @@
 * Clearly defined data within a row - No
 
 Setup MORPH_PERIOD for data recovery, available options are
+
 * thisweek (default)
 * thismonth
 * lastmonth
