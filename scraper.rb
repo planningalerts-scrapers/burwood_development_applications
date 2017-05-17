@@ -39,7 +39,7 @@ starting_url = 'https://ecouncil.burwood.nsw.gov.au/eservice/daEnquiryInit.do?do
 search_result_url = 'https://ecouncil.burwood.nsw.gov.au/eservice/daEnquiryDetails.do?index='
 
 def scrape_table(agent, scrape_url, comment_url)
-  puts "Scraping " + scrape_url
+#  puts "Scraping " + scrape_url
   doc = agent.get(scrape_url)
   rows = doc.search('.rowDataOnly > .inputField:nth-child(2)').map { |e| e.inner_text.strip }
   reference = rows[2]
